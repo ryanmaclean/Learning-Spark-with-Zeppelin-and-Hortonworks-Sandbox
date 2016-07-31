@@ -32,7 +32,7 @@ choco install virtualbox`
 OR
 
 ```
-choco install vmware-workstation
+choco install vmwareworkstation
 ```
 
 #### Ubuntu Linux LTS
