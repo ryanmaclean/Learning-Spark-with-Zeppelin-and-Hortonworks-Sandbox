@@ -167,3 +167,44 @@ Saving to: “spam.data”
    650K .......... .......... .......... .                    100% 51.5M=0.3s
 2016-07-31 21:30:19 (2.64 MB/s) - “spam.data” saved [698341/698341]
 ```
+
+#### Location Loaded Data
+
+As we won't be using HDFS, we'll need to know where in the filesystem the data went. 
+
+This can be accomplished by running another shell script:
+
+```
+%sh
+pwd
+ls
+```
+
+The results: 
+
+```
+/var/lib/zeppelin
+derby.log
+index.html
+notebook
+spam.data
+zeppelin-view-1.0-SNAPSHOT.jar
+```
+
+You can see that the `spam-data` file was saved to `/var/lib/zeppelin`. We can use this path to load data. 
+
+#### Loading Data
+
+Most Zeppelin examples rightly focus on HDFS, but for the scope of the course, only local files were used as there's only one sandbox node. 
+
+In order to load the `spam-data` file from disk, the following `file:///` syntax is required:
+
+```
+val inFile = sc.textFile("file:///var/lib/zeppelin/spam.data")
+```
+
+## Wrapping Up
+
+This should be enough to get you started in Zeppelin with shell examples that will replace the SSH steps, data loading techniques for outside data, as well as an easy way to run Spark code in the browser. 
+
+I've also attached a notebook [example.json](/example.json) file that you can simply load into Zeppelin to get you started with the code above. You can edit and re-run the lines as needed. 
