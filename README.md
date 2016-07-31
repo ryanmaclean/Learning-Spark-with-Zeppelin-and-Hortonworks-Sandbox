@@ -8,6 +8,8 @@ I've created this repo in order to catalog the differences between the setup I u
 ### Install a Hypervisor 
 You'll need to have either VMware (30 day trial) or Virtualbox environments installed already. If you don't have a preference, I'd suggest Virtualbox, though I've got examples for all 6 permutations regardless. 
 
+
+#### Apple macOS
 On macOS, this can be done via [Homebrew](http://brew.sh/):
 
 ```
@@ -20,6 +22,7 @@ OR
 brew install vmware-fusion
 ```
 
+#### Microsoft Windows
 On Windows, the excellent [Chocolatey](https://chocolatey.org/) comes to the rescue:
 
 ```
@@ -32,8 +35,8 @@ OR
 choco install vmware-workstation
 ```
 
-On Ubuntu, things are slightly more complicated, but not insurmountable: 
-
+#### Ubuntu Linux LTS
+On Ubuntu, things are slightly more complicated, but not insurmountable. 
 
 Virtualbox:
 
