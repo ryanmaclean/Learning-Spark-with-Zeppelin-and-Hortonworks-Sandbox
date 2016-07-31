@@ -1,0 +1,159 @@
+{
+  "paragraphs": [
+    {
+      "config": {
+        "colWidth": 12,
+        "graph": {
+          "mode": "table",
+          "height": 300,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1470000572138_-973051656",
+      "id": "20160731-212932_1794414893",
+      "dateCreated": "Jul 31, 2016 9:29:32 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:1244",
+      "text": "%sh\nwget http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data",
+      "dateUpdated": "Jul 31, 2016 9:30:17 PM",
+      "dateFinished": "Jul 31, 2016 9:30:19 PM",
+      "dateStarted": "Jul 31, 2016 9:30:17 PM",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "--2016-07-31 21:30:17--  http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data\nResolving www-stat.stanford.edu... 171.67.216.22\nConnecting to www-stat.stanford.edu|171.67.216.22|:80... connected.\nHTTP request sent, awaiting response... 302 Found\nLocation: http://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data [following]\n--2016-07-31 21:30:18--  http://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data\nResolving statistics.stanford.edu... 171.64.13.30\nConnecting to statistics.stanford.edu|171.64.13.30|:80... connected.\nHTTP request sent, awaiting response... 302 Found\nLocation: https://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data [following]\n--2016-07-31 21:30:18--  https://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data\nConnecting to statistics.stanford.edu|171.64.13.30|:443... connected.\nHTTP request sent, awaiting response... 301 Moved Permanently\nLocation: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data [following]\n--2016-07-31 21:30:18--  http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data\nResolving statweb.stanford.edu... 171.67.24.34\nConnecting to statweb.stanford.edu|171.67.24.34|:80... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 698341 (682K)\nSaving to: “spam.data.2”\n\n     0K .......... .......... .......... .......... ..........  7%  798K 1s\n    50K .......... .......... .......... .......... .......... 14% 1.56M 1s\n   100K .......... .......... .......... .......... .......... 21% 1.61M 0s\n   150K .......... .......... .......... .......... .......... 29% 42.2M 0s\n   200K .......... .......... .......... .......... .......... 36% 1.57M 0s\n   250K .......... .......... .......... .......... .......... 43% 1.65M 0s\n   300K .......... .......... .......... .......... .......... 51% 24.8M 0s\n   350K .......... .......... .......... .......... .......... 58% 42.5M 0s\n   400K .......... .......... .......... .......... .......... 65% 1.71M 0s\n   450K .......... .......... .......... .......... .......... 73% 23.2M 0s\n   500K .......... .......... .......... .......... .......... 80% 50.3M 0s\n   550K .......... .......... .......... .......... .......... 87% 1.70M 0s\n   600K .......... .......... .......... .......... .......... 95% 26.6M 0s\n   650K .......... .......... .......... .                    100% 51.5M=0.3s\n\n2016-07-31 21:30:19 (2.64 MB/s) - “spam.data.2” saved [698341/698341]\n\n"
+      }
+    },
+    {
+      "config": {
+        "colWidth": 12,
+        "graph": {
+          "mode": "table",
+          "height": 300,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1470000591601_-1003816244",
+      "id": "20160731-212951_1777578225",
+      "dateCreated": "Jul 31, 2016 9:29:51 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:1269",
+      "text": "%sh\npwd\nls",
+      "dateUpdated": "Jul 31, 2016 9:30:25 PM",
+      "dateFinished": "Jul 31, 2016 9:30:25 PM",
+      "dateStarted": "Jul 31, 2016 9:30:25 PM",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "/var/lib/zeppelin\nderby.log\nindex.html\nnotebook\nspam.data\nspam.data.1\nspam.data.2\nzeppelin-view-1.0-SNAPSHOT.jar\n"
+      }
+    },
+    {
+      "config": {
+        "colWidth": 12,
+        "graph": {
+          "mode": "table",
+          "height": 300,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1470000571179_-505581742",
+      "id": "20160731-212931_389989913",
+      "dateCreated": "Jul 31, 2016 9:29:31 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:1225",
+      "text": "val inFile = sc.textFile(\"file:///var/lib/zeppelin/spam.data\")\nval nums = inFile.map(x => x.split(' ').map(_.toDouble))\ninFile.first()",
+      "dateUpdated": "Jul 31, 2016 9:31:28 PM",
+      "dateFinished": "Jul 31, 2016 9:31:30 PM",
+      "dateStarted": "Jul 31, 2016 9:31:28 PM",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "inFile: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[21] at textFile at <console>:29\nnums: org.apache.spark.rdd.RDD[Array[Double]] = MapPartitionsRDD[22] at map at <console>:31\nres15: String = 0 0.64 0.64 0 0.32 0 0 0 0 0 0 0.64 0 0 0 0.32 0 1.29 1.93 0 0.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.778 0 0 3.756 61 278 1\n"
+      }
+    },
+    {
+      "config": {
+        "colWidth": 12,
+        "graph": {
+          "mode": "table",
+          "height": 300,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1470000336240_169531629",
+      "id": "20160731-212536_677019211",
+      "dateCreated": "Jul 31, 2016 9:25:36 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500,
+      "focus": true,
+      "$$hashKey": "object:1147"
+    }
+  ],
+  "name": "Note SREAMUJZU",
+  "id": "2BUJ152K9",
+  "angularObjects": {
+    "2BRQGG7G1": [],
+    "2BR6HFW8R": [],
+    "2BRVPUQ58": [],
+    "2BTUFNWW2": [],
+    "2BR6W4NUC": [],
+    "2BSSZDFHE": [],
+    "2BS76V85B": [],
+    "2BTAB8219": [],
+    "2BT5HP4T6": [],
+    "2BS1FG5X7": [],
+    "2BSQWBXUB": [],
+    "2BUT88C5U": [],
+    "2BUUBMFAD": []
+  },
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}
