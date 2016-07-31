@@ -1,7 +1,7 @@
 # Learning Spark with Zeppelin and Hortonworks Sandbox
 Learning Spark with the Zeppelin notebook from the Hortonworks Sandbox VM
 
-I've created this repo in order to catalog the differences between the setup I used and the one presented in the Eduonix Spark course as I found it much simpler though Zeppelin may not have been in the sandbox at the time of course creation. 
+I've created this repo in order to catalog the differences between the setup I used and the one presented in the Eduonix [Learn Apache Spark from Scratch](https://www.eduonix.com/courses/Software-Development/Learn-Apache-Spark-from-Scratch-for-Beginners) course as I found it much simpler though Zeppelin may not have been in the sandbox at the time of course creation. 
 
 ## Getting Started 
 
