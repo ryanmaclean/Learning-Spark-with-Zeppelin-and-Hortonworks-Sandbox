@@ -228,6 +228,5 @@ You'll note that this is much less verbose than `spark-shell`, for better or wor
 
 This should be enough to get you started in Zeppelin with shell examples that will replace the SSH steps, data loading techniques for outside data, as well as an easy way to run Spark code in the browser. 
 
-I've also attached a notebook [example.json](/example.json) file that you can simply load into Zeppelin to get you started with the code above. You can edit and re-run the lines as needed. 
-
 ![](/zeppelin.PNG)
+I've also attached a notebook [example.json](/example.json) file that you can simply load into Zeppelin to get you started with the code above. You can edit and re-run the lines as needed. 
