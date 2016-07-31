@@ -203,6 +203,27 @@ In order to load the `spam-data` file from disk, the following `file:///` syntax
 val inFile = sc.textFile("file:///var/lib/zeppelin/spam.data")
 ```
 
+#### Running Spark Code Examples
+
+We've already run some Spark when loading the data, but basically the commands you add to your notebook will run just as they would in `spark-shell`. 
+
+The rest of the previous example: 
+
+```
+val nums = inFile.map(x => x.split(' ').map(_.toDouble))
+inFile.first()
+```
+
+Should result in: 
+
+```
+inFile: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[21] at textFile at <console>:29
+nums: org.apache.spark.rdd.RDD[Array[Double]] = MapPartitionsRDD[22] at map at <console>:31
+res15: String = 0 0.64 0.64 0 0.32 0 0 0 0 0 0 0.64 0 0 0 0.32 0 1.29 1.93 0 0.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.778 0 0 3.756 61 278 1
+```
+
+You'll note that this is much less verbose than `spark-shell`, for better or worse. 
+
 ## Wrapping Up
 
 This should be enough to get you started in Zeppelin with shell examples that will replace the SSH steps, data loading techniques for outside data, as well as an easy way to run Spark code in the browser. 
