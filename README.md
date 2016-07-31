@@ -19,7 +19,7 @@ OR
 brew install vmware-fusion # this will be a 30 day trial unless you have a license
 ```
 
-On Windows, the excellent Chocolatey comes to the rescue:
+On Windows, the excellent [Chocolatey](https://chocolatey.org/) comes to the rescue:
 
 ```
 choco install virtualbox`
