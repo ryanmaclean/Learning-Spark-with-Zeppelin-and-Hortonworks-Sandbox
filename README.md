@@ -74,6 +74,8 @@ Note that before starting the VM, I'd highly recommend setting your network adap
 
 Once started, you'll be met with a Hortonworks screen which will give you the IP address of the VM that we will use later on. 
 
+![](vm_initial_screen.png)
+
 ### Connect to the Sandbox
 
 At this point, you can either click into the VM or connect to it via SSH in order to change a few things. 
