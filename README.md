@@ -109,3 +109,61 @@ Note, if the IP address given to you by the initial sandbox startup screen was 1
 ```
 ifconfig eth0 | grep 'inet addr:' | cut -d: -f2
 ```
+
+## Using Zeppelin
+
+This will only be a quick overview, as it's very similar to the `spark-shell` examples, but some attention needs to be given to file uploads as they are different than normal Zeppelin examples. 
+
+### Using Data
+
+The first thing to note is that you can simply run shell commands in Zeppelin using `%sh`. 
+
+
+#### Downloading
+
+For example, in order to download the first example from the intro:
+
+```
+%sh
+wget http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data
+```
+
+Results in: 
+
+```
+--2016-07-31 21:30:17--  http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data
+Resolving www-stat.stanford.edu... 171.67.216.22
+Connecting to www-stat.stanford.edu|171.67.216.22|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data [following]
+--2016-07-31 21:30:18--  http://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data
+Resolving statistics.stanford.edu... 171.64.13.30
+Connecting to statistics.stanford.edu|171.64.13.30|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data [following]
+--2016-07-31 21:30:18--  https://statistics.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data
+Connecting to statistics.stanford.edu|171.64.13.30|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data [following]
+--2016-07-31 21:30:18--  http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/spam.data
+Resolving statweb.stanford.edu... 171.67.24.34
+Connecting to statweb.stanford.edu|171.67.24.34|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 698341 (682K)
+Saving to: “spam.data”
+     0K .......... .......... .......... .......... ..........  7%  798K 1s
+    50K .......... .......... .......... .......... .......... 14% 1.56M 1s
+   100K .......... .......... .......... .......... .......... 21% 1.61M 0s
+   150K .......... .......... .......... .......... .......... 29% 42.2M 0s
+   200K .......... .......... .......... .......... .......... 36% 1.57M 0s
+   250K .......... .......... .......... .......... .......... 43% 1.65M 0s
+   300K .......... .......... .......... .......... .......... 51% 24.8M 0s
+   350K .......... .......... .......... .......... .......... 58% 42.5M 0s
+   400K .......... .......... .......... .......... .......... 65% 1.71M 0s
+   450K .......... .......... .......... .......... .......... 73% 23.2M 0s
+   500K .......... .......... .......... .......... .......... 80% 50.3M 0s
+   550K .......... .......... .......... .......... .......... 87% 1.70M 0s
+   600K .......... .......... .......... .......... .......... 95% 26.6M 0s
+   650K .......... .......... .......... .                    100% 51.5M=0.3s
+2016-07-31 21:30:19 (2.64 MB/s) - “spam.data” saved [698341/698341]
+```
