@@ -7,21 +7,29 @@ I've created this repo in order to catalog the differences between the setup I u
 
 You'll need to have either VMware or Virtualbox environments installed already. 
 
-On Mac, this can be done via Homebrew:
+On macOS, this can be done via Homebrew:
 
-`brew install virtualbox`
+```
+brew install virtualbox
+```
 
 OR
 
-`brew install vmware-fusion` # this will be a 30 day trial unless you have a license
+```
+brew install vmware-fusion # this will be a 30 day trial unless you have a license
+```
 
 On Windows, the excellent Chocolatey comes to the rescue:
 
-`choco install virtualbox`
+```
+choco install virtualbox`
+```
 
 OR
 
-`choco install vmware-workstation` # this will be a 30 day trial unless you have a license
+```
+choco install vmware-workstation # this will be a 30 day trial unless you have a license
+```
 
 ### Download the Hortonwork Sandbox VM
 
