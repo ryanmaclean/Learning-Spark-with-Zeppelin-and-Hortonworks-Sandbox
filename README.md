@@ -7,7 +7,7 @@ I've created this repo in order to catalog the differences between the setup I u
 
 You'll need to have either VMware or Virtualbox environments installed already. 
 
-On macOS, this can be done via Homebrew:
+On macOS, this can be done via [Homebrew](http://brew.sh/):
 
 ```
 brew install virtualbox
