@@ -84,6 +84,28 @@ Note that in the course, there's a step for downloading Spark - this is no longe
 
 ### Change the SSH Password
 
+In order to login, use the username `root` and the password `hadoop`. 
+
+You'll be asked to change your password immediately: simply type in `hadoop` again, then your new password, and type it once more in order to confirm the new password. 
+
 ### Change the Ambari Password
 
+This is an optional step, but highly recommended as Ambari is a fantastic way to manage the VM:
+
+`ambari-admin-password-reset`
+
+Then simply set a new admin password. 
+
 ### Open Zeppelin in Your Browser
+
+Now take the IP address you got from the initial VM start screen and paste it into you browser and add `:9995` to the end, like so:
+
+```
+http://10.0.0.1:9995
+```
+
+Note, if the IP address given to you by the initial sandbox startup screen was 127.0.0.1 (as it was in my case), you can type:
+
+```
+ifconfig eth0 | grep 'inet addr:' | cut -d: -f2
+```
