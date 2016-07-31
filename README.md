@@ -5,6 +5,7 @@ I've created this repo in order to catalog the differences between the setup I u
 
 ## Getting Started 
 
+### Install a Hypervisor 
 You'll need to have either VMware (30 day trial) or Virtualbox environments installed already. If you don't have a preference, I'd suggest Virtualbox, though I've got examples for all 6 permutations regardless. 
 
 On macOS, this can be done via [Homebrew](http://brew.sh/):
