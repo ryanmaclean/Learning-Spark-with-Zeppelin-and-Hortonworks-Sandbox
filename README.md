@@ -62,9 +62,23 @@ chmod +x *.bundle
 
 ### Download the Hortonwork Sandbox VM
 
+This section really should not be needed, but at the time I took the course, the Hortonworks website refused to let me download the sandbox with anything other than Mozilla Firefox. This isn't a very large concern, but I'm hoping to help save you time before you try it in Chrome, then IE, then Safari on your Mac. 
+
+Hortonworks download/survey link: http://hortonworks.com/products/sandbox/
+
 ### Start the VM
 
-### Connect to the Sandbox via SSH
+Once downloaded, you should be able to simply double click either the `vmdk` or `ova` you downloaded for your corresponding hypervisor in order to import it. 
+
+Note that before starting the VM, I'd highly recommend setting your network adapter to `bridged mode` if your network environment allows it. 
+
+Once started, you'll be met with a Hortonworks screen which will give you the IP address of the VM that we will use later on. 
+
+### Connect to the Sandbox
+
+At this point, you can either click into the VM or connect to it via SSH in order to change a few things. 
+
+Note that in the course, there's a step for downloading Spark - this is no longer needed as the sandbox VM now includes it. 
 
 ### Change the SSH Password
 
